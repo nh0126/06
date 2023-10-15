@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void tenstar()
+void func1()
 {
-    int i;
-    for(i=0; i<10; i++)
-             printf("*"); 
+    int x;
+    printf("func1 x is at %p\n", &x); 
 }
 
 
 int main(int argc, char *argv[])
 {
-    int i;
-
-    tenstar();
-    tenstar();
-    tenstar();
+    int x;
+    printf("main x is at %p\n", &x);
+    func1();
 
   system("PAUSE");	
   return 0;
